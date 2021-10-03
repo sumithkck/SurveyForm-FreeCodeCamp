@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form By Sumith</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-primary bg-gradient">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <div class="container card shadow p-3 mb-5 bg-body rounded">
+        <header>
+            <h1 id="title" class="h1">Programmer Survey Form</h1>
+            <p id="description" class="h5">
+                Thank you for taking time to help us to conduct this survey regarding the knowledge about computer programmers and their skill levels.
+            </p>
+        </header>
+        <form id="survey-form" action="" method="POST">
+            <!-- Basic information -->
+            <label id="name-label" for="name" class="form-label">Name</label>
+            <br />
+            <input name="name" id="name" type="text" value="Enter your name here" placeholder="Your name" required />
+            <br />
+            <br />
+            <label id="email-label" for="email" class="form-label">Email</label>
+            <br />
+            <input name="email" id="email" type="email" value="Enter your email here" placeholder="Your email" required />
+            <br />
+            <br />
+            <label for="age-label" class="form-label">Age</label><br />
+            <input name="age" id="age" type="number" min="10" max="40" value="Age" />
+            <br />
+            <br />
+            <!-- Employment Information -->
+            <label for="employment" class="form-label">Are you employed as a developer?</label
+        >
+        <br />
+        <br />
+        <select id="dropdown" name="employment" class="form-select">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+        <br />
+        <br />
+        <label id="number-label" for="number" class="form-label"
+          >If yes,howmany years of experience do you have?</label
+        >
+        <br />
+        <br />
+        <input
+          type="number"
+          id="number"
+          name="number"
+          min="1"
+          max="50"
+          placeholder="Years"
+        />
+        <br />
+        <br />
+
+        <fieldset class="form-check">
+          <legend class="form-label">
+            If no,are you looking for a developer job?
+          </legend>
+          <br />
+          <input
+            name="jobseeker"
+            type="radio"
+            value="Yes"
+            class="form-check-input"
+          />
+          Yes
+
+          <br />
+          <input
+            name="jobseeker"
+            type="radio"
+            value="No"
+            class="form-check-input"
+          />
+          No
+
+          <br />
+        </fieldset>
+        <br />
+        <fieldset class="form-check">
+          <legend class="form-label">
+            Programming Languages and Technologies
+          </legend>
+          <br />
+          <input
+            name="tech"
+            type="checkbox"
+            value="HTML5"
+            class="form-check-input"
+          />
+          HTML5
+          <br />
+          <input
+            name="tech"
+            type="checkbox"
+            value="CSS3"
+            class="form-check-input"
+          />
+          CSS3
+          <br />
+          <input
+            name="tech"
+            type="checkbox"
+            value="JAVASCRIPT"
+            class="form-check-input"
+          />
+          JAVASCRIPT
+          <br />
+          <input
+            name="tech"
+            type="checkbox"
+            value="PHP"
+            class="form-check-input"
+          />
+          PHP
+          <br />
+          <input
+            name="tech"
+            type="checkbox"
+            value="NODE.JS"
+            class="form-check-input"
+          />
+          NODE.JS
+          <br />
+          <input
+            name="tech"
+            type="checkbox"
+            value="REACT.JS"
+            class="form-check-input"
+          />
+          REACT.JS
+          <br />
+          <input
+            name="tech"
+            type="checkbox"
+            value="MOGODB"
+            class="form-check-input"
+          />
+          MONGODB
+          <br />
+          <input
+            name="tech"
+            type="checkbox"
+            value="MYSQL"
+            class="form-check-input"
+          />
+          MYSQL
+          <br />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Are you satisfied with the field?</legend>
+          <textarea rows="10" cols="40"></textarea>
+        </fieldset>
+
+        <br />
+        <button
+          id="submit"
+          name="submit"
+          type="submit"
+          class="btn btn-primary mb-3"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <footer>Made by Sumith</footer>
+  </body>
+</html>

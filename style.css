@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    color: #1f1f1f;
+}
+
+.container {
+    width: 60%;
+    display: block;
+    margin: auto;
+    padding: 3% !important;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#email,
+#name,
+#age {
+    width: 70%;
+    height: 30px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 98%;
+    }
+    textarea {
+        width: 300px !important;
+    }
+    p {
+        font-size: 1rem !important;
+    }
+}
